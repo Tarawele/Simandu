@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products | Simandu Trade </title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-globe-africa"></i>
+                </div>
+                <h1>Simandu <span>Trade</span></h1>
+            </div>
+            
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <nav id="mainNav">
+                <ul>
+                    <li><a href="index.html" data-i18n="common.home">Home</a></li>
+                    <li><a href="about.html" data-i18n="common.about">About</a></li>
+                    <li><a href="products.html" class="active" data-i18n="common.products">Products</a></li>
+                    <li><a href="contact.html" data-i18n="common.contact">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <div class="language-selector">
+                <button class="lang-flag" data-lang="ru">
+                    <img src="./images/russian" alt="Russian">
+                </button>
+                <button class="lang-flag" data-lang="fr">
+                    <img src="./images/icons8-франция-50.png" alt="French">
+                </button>
+                <button class="lang-flag" data-lang="en">
+                    <img src="./images/icons8-сша-48.png" alt="English">
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Products Section -->
+    <section id="products">
+        <div class="container">
+            <div class="section-title">
+                <h2 data-i18n="products.section_title">Our Products</h2>
+                <p data-i18n="products.section_subtitle">Premium agricultural goods from Guinea and Russia</p>
+            </div>
+            
+            <div class="products-tabs">
+                <button class="tab-btn active" data-category="guinea" data-i18n="products.from_guinea">From Guinea</button>
+                <button class="tab-btn" data-category="russia" data-i18n="products.from_russia">From Russia</button>
+            </div>
+            
+            <div class="products-grid">
+                <!-- Products from Guinea -->
+                <div class="product-card" data-category="guinea">
+                    <div class="product-img coffee">
+                        <!-- <i class="fas fa-coffee"></i> -->
+                        <img class="fas fa-coffee" src="./images/Coffee Beans.jpg">
+                    </div>
+                    <div class="product-info">
+                        <h3 data-i18n="products.coffee_title">Premium Coffee Beans</h3>
+                        <p data-i18n="products.coffee_desc">High-quality Arabica beans grown in the rich volcanic soil of Guinea's highlands.</p>
+                        <div class="product-meta">
+                            <span data-i18n="common.origin">Origin</span>: <span data-i18n="products.fouta_djallon">Fouta Djallon</span>
+                            <span class="price" data-i18n="common.price_request">Price on Request</span>
+                        </div>
+                        <a href="contact.html" class="btn btn-outline" data-i18n="common.request_quote">Request Quote</a>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="guinea">
+                    <div class="product-img cacao">
+                        <!-- <i class="fas fa-seedling"></i> -->
+                        <img class="as fa-seedling" src="./images/Cacao Beans.webp">
+                    </div>
+                    <div class="product-info">
+                        <h3 data-i18n="products.cacao_title">Cacao Beans</h3>
+                        <p data-i18n="products.cacao_desc">Organic cacao beans with rich flavor profile, perfect for premium chocolate production.</p>
+                        <div class="product-meta">
+                            <span data-i18n="products.origin">Origin</span>: <span data-i18n="products.guinee_forest">Guinée Forestière</span>
+                            <span class="price" data-i18n="common.price_request">Price on Request</span>
+                        </div>
+                        <a href="contact.html" class="btn btn-outline" data-i18n="common.request_quote">Request Quote</a>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="guinea">
+                    <div class="product-img oil">
+                        <!-- <i class="fas fa-oil-can"></i> -->
+                        <img class="fas fa-oil-can" src="./images/Palm Oil.jpg">
+                    </div>
+                    <div class="product-info">
+                        <h3 data-i18n="products.palm_oil_title">Palm Oil</h3>
+                        <p data-i18n="products.palm_oil_desc">Cold-pressed, unrefined palm oil with rich nutrients and vibrant color.</p>
+                        <div class="product-meta">
+                            <span data-i18n="products.origin">Origin</span>: <span data-i18n="products.basse_guinee">Basse-Guinée</span>
+                            <span class="price" data-i18n="common.price_request">Price on Request</span>
+                        </div>
+                        <a href="contact.html" class="btn btn-outline" data-i18n="common.request_quote">Request Quote</a>
+                    </div>
+                </div>
+                
+                <!-- Products from Russia -->
+                <div class="product-card" data-category="russia">
+                    <div class="product-img wheat">
+                        <!-- <i class="fas fa-wheat"></i> -->
+                        <img class="fas fa-wheat" src="./images/Wheat Seeds.jpg">
+                    </div>
+                    <div class="product-info">
+                        <h3 data-i18n="products.wheat_title">Wheat Seeds</h3>
+                        <p data-i18n="products.wheat_desc">High-yield, disease-resistant wheat seeds suitable for African growing conditions.</p>
+                        <div class="product-meta">
+                            <span data-i18n="products.origin">Origin</span>: <span data-i18n="products.krasnodar">Krasnodar Region</span>
+                            <span class="price" data-i18n="common.price_request">Price on Request</span>
+                        </div>
+                        <a href="contact.html" class="btn btn-outline" data-i18n="common.request_quote">Request Quote</a>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="russia">
+                    <div class="product-img soap">
+                        <!-- <i class="fas fa-soap"></i> -->
+                        <img class="fas fa-soap" src="./images/Soaps.jpg">
+                    </div>
+                    <div class="product-info">
+                        <h3 data-i18n="products.soap_title">Traditional Soaps</h3>
+                        <p data-i18n="products.soap_desc">Natural, handmade soaps using traditional Russian methods and ingredients.</p>
+                        <div class="product-meta">
+                            <span data-i18n="products.origin">Origin</span>: <span data-i18n="products.moscow_region">Moscow Region</span>
+                            <span class="price" data-i18n="common.price_request">Price on Request</span>
+                        </div>
+                        <a href="contact.html" class="btn btn-outline" data-i18n="common.request_quote">Request Quote</a>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="russia">
+                    <div class="product-img onion">
+                        <!-- <i class="fas fa-onion"></i> -->
+                        <img class="fas fa-onion" src="./images/Premium Onions.webp">
+                    </div>
+                    <div class="product-info">
+                        <h3 data-i18n="products.onion_title">Premium Onions</h3>
+                        <p data-i18n="products.onion_desc">High-quality storage onions with excellent shelf life and flavor profile.</p>
+                        <div class="product-meta">
+                            <span data-i18n="common.origin">Origin</span>: <span data-i18n="products.volgograd">Volgograd Region</span>
+                            <span class="price" data-i18n="common.price_request">Price on Request</span>
+                        </div>
+                        <a href="contact.html" class="btn btn-outline" data-i18n="common.request_quote">Request Quote</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

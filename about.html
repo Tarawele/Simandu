@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Simandu Trade </title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-globe-africa"></i>
+                </div>
+                <h1>Simandu <span>Trade</span></h1>
+            </div>
+            
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <nav id="mainNav">
+                <ul>
+                    <li><a href="index.html" data-i18n="common.home">Home</a></li>
+                    <li><a href="about.html" class="active" data-i18n="common.about">About</a></li>
+                    <li><a href="products.html" data-i18n="common.products">Products</a></li>
+                    <li><a href="contact.html" data-i18n="common.contact">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <div class="language-selector">
+                <button class="lang-flag" data-lang="ru">
+                    <img src="./images/russian" alt="Russian">
+                </button>
+                <button class="lang-flag" data-lang="fr">
+                    <img src="./images/icons8-франция-50.png" alt="French">
+                </button>
+                <button class="lang-flag" data-lang="en">
+                    <img src="./images/icons8-сша-48.png" alt="English">
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="section-title">
+                <h2 data-i18n="about.section_title">About Our Company</h2>
+                <p data-i18n="about.section_subtitle">Connecting markets through trusted trade relationships</p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <h3 data-i18n="about.about_heading">Your Reliable Trade Partner</h3>
+                    <p data-i18n="about.about_text1">Simandu Trade is the bridge specializes in facilitating premium agricultural trade between Guinea and Russia. Founded by professionals with deep roots in both countries, we leverage our unique understanding of both markets to create valuable trade opportunities.</p>
+                    <p data-i18n="about.about_text2">Our team in Guinea ensures direct access to the highest quality agricultural products, while our Russian operations guarantee efficient distribution and market penetration.</p>
+                    <p data-i18n="about.about_text3">We pride ourselves on ethical sourcing, transparent operations, and building long-term partnerships with both suppliers and buyers.</p>
+                    <a href="contact.html" class="btn" data-i18n="common.connect_with_us">Connect With Us</a>
+                </div>
+                <div class="about-image">
+                    <div class="placeholder-image">
+                        <i class="fas fa-globe-africa"></i>
+                        <i class="fas fa-globe-europe"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="features">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3 data-i18n="about.feature1_title">Trusted Relationships</h3>
+                    <p data-i18n="about.feature1_text">Direct partnerships with producers in Guinea and distributors in Russia ensure quality and reliability.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3 data-i18n="about.feature2_title">Quality Products</h3>
+                    <p data-i18n="about.feature2_text">We specialize in premium agricultural goods sourced directly from their origins.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-ship"></i>
+                    </div>
+                    <h3 data-i18n="about.feature3_title">Efficient Logistics</h3>
+                    <p data-i18n="about.feature3_text">Streamlined import/export processes ensuring timely delivery of goods.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-exchange-alt"></i>
+                    </div>
+                    <h3 data-i18n="about.feature4_title">Mutual Benefit</h3>
+                    <p data-i18n="about.feature4_text">Creating economic opportunities for both Guinean producers and Russian buyers.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

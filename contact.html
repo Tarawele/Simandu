@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Simandu Trade </title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-globe-africa"></i>
+                </div>
+                <h1>Simandu <span>Trade</span></h1>
+            </div>
+            
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <nav id="mainNav">
+                <ul>
+                    <li><a href="index.html" data-i18n="common.home">Home</a></li>
+                    <li><a href="about.html" class="active" data-i18n="common.about">About</a></li>
+                    <li><a href="products.html" data-i18n="common.products">Products</a></li>
+                    <li><a href="contact.html" class="active" data-i18n="common.contact">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <div class="language-selector">
+                <button class="lang-flag" data-lang="ru">
+                    <img src="./images/russian" alt="Russian">
+                </button>
+                <button class="lang-flag" data-lang="fr">
+                    <img src="./images/icons8-франция-50.png" alt="French">
+                </button>
+                <button class="lang-flag" data-lang="en">
+                    <img src="./images/icons8-сша-48.png" alt="English">
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2 data-i18n="contact.section_title">Contact Us</h2>
+                <p data-i18n="contact.section_subtitle">Get in touch for quotes, orders, and partnership opportunities</p>
+            </div>
+            
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3 data-i18n="contact.get_in_touch">Get In Touch</h3>
+                    <p data-i18n="contact.get_in_touch_desc">Have questions about our products or services? Reach out to our team for more information or to request a quote.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h4 data-i18n="common.russia_office">Russia Office</h4>
+                                <p>Nevsky Prospekt 100, St. Petersburg, Russia</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h4 data-i18n="common.guinea_office">Guinea Office</h4>
+                                <p>Boulevard du Commerce, Conakry, Guinea</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div>
+                                <h4 data-i18n="common.phone">Phone</h4>
+                                <p>+7 (925) 358-5275 (Russia)</p>
+                                <p>+224 624 178 291 (Guinea)</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4 data-i18n="common.email">Email</h4>
+                                <p>info@simandutrade.online</p>
+                                <p>sales@simandutrade.online</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-map">
+                        <div class="placeholder-map">
+                            <i class="fas fa-map"></i>
+                            <span data-i18n="contact.map_placeholder">Location Map</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form id="leadForm">
+                        <div class="form-group">
+                            <label for="name" data-i18n="common.full_name">Full Name</label>
+                            <input type="text" id="name" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email" data-i18n="common.email_address">Email Address</label>
+                            <input type="email" id="email" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone" data-i18n="common.phone_number">Phone Number</label>
+                            <input type="tel" id="phone" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="interest" data-i18n="contact.product_interest">Product Interest</label>
+                            <select id="interest" class="form-control" required>
+                                <option value="" data-i18n="common.select_product">Select a product</option>
+                                <option value="coffee" data-i18n="products.coffee_title">Coffee Beans</option>
+                                <option value="cacao" data-i18n="products.cacao_title">Cacao Beans</option>
+                                <option value="oil" data-i18n="products.palm_oil_title">Palm Oil</option>
+                                <option value="nuts" data-i18n="products.nuts_title">Nuts</option>
+                                <option value="wheat" data-i18n="products.wheat_title">Wheat Seeds</option>
+                                <option value="soap" data-i18n="products.soap_title">Soaps</option>
+                                <option value="onion" data-i18n="products.onion_title">Onions</option>
+                                <option value="other" data-i18n="contact.other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message" data-i18n="common.message">Your Message</label>
+                            <textarea id="message" class="form-control" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn" data-i18n="common.send_inquiry">Send Inquiry</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
