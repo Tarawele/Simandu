@@ -1,4 +1,4 @@
-# Simandu Nexus Group Website
+# Simandu Trade Group Website
 
 Official corporate website for Simandu Nexus Group - Facilitating premium trade between Guinea and Russia, with planned expansion into logistics, banking, finance, IT, and security services.
 
